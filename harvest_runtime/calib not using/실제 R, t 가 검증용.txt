@@ -1,0 +1,8 @@
+# 1) 샘플 수집 (마커 한 변 길이 예: 0.04m)
+python -m calib.collect_single_aruco --marker-length 0.04
+
+# 2) Hand–Eye 풀기 → YAML 저장
+python -m calib.solve_handeye_single run-YYYYmmdd-HHMMSS
+
+# 3) 검증(권장)
+python -m calib.validate_handeye_single run-YYYYmmdd-HHMMSS --pair-mode all

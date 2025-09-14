@@ -1,0 +1,2 @@
+cd baek/harvest_runtime
+bash scripts/run_robot_bridge.sh

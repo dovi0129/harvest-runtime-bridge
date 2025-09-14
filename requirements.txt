@@ -1,0 +1,8 @@
+# 로봇 컨트롤러 SDK
+neuromeka>=1.0.0      # IndyDCP 2/3 Python API (pip install neuromeka)
+
+# DYNAMIXEL 그리퍼 SDK
+dynamixel-sdk>=3.7.51 # ROBOTIS 공식 Python wheel
+
+# dynamixel-sdk 
+pyserial>=3.5

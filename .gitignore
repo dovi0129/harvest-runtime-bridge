@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Logs / temp
+*.log
+*.tmp
+
+# Configs (commit examples only)
+config/*.yaml
+!config/*.yaml.example
+**/config/*.yaml
+!**/config/*.yaml.example
+
+# Models / datasets / captures (LFS 권장)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.pkl
+*.npz
+*.npy
+*.bag
+*.ply
+*.pcd
+dataset/
+data/
+captures/
+recordings/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
