@@ -1,4 +1,3 @@
-````markdown
 # harvest-runtime-bridge
 
 A communication runtime that connects vision-based strawberry detection to robotic harvesting.  
@@ -157,5 +156,3 @@ MIT
 
 * Detection module **adapted** from **Minseo Cho (Hanbat National University)**.
   We appreciate the original implementation and insights. (조민서, 한밭대)
-
-```
