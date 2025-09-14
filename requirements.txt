@@ -1,8 +1,42 @@
-# 로봇 컨트롤러 SDK
-neuromeka>=1.0.0      # IndyDCP 2/3 Python API (pip install neuromeka)
+# =========================
+# harvest-runtime-bridge
+# Requirements
+# =========================
 
-# DYNAMIXEL 그리퍼 SDK
+# --- Core utils ---
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+pyyaml>=6.0
+tqdm>=4.66
+rich>=13.7
+
+# --- Vision / DL ---
+# Torch/TorchVision은 PC (x86_64)에서는 pip 설치 가능,
+# Jetson Orin에서는 NVIDIA 전용 wheel 사용 권장.
+torch>=2.2; platform_machine!="aarch64"
+torchvision>=0.17; platform_machine!="aarch64"
+ultralytics>=8.2.0          # YOLO 기반 detection
+opencv-python-headless>=4.8 # OpenCV (GUI 없는 서버용)
+scikit-image>=0.21
+scikit-learn>=1.4
+
+# --- Intel RealSense ---
+# x86_64: pip install pyrealsense2
+# Jetson: librealsense aarch64 wheel/apt 사용 권장
+pyrealsense2>=2.55; platform_machine!="aarch64"
+
+# --- Robot controller SDK ---
+neuromeka>=1.0.0      # IndyDCP2/3 Python API (벤더 제공 whl 설치 필요)
+
+# --- DYNAMIXEL gripper SDK ---
 dynamixel-sdk>=3.7.51 # ROBOTIS 공식 Python wheel
+pyserial>=3.5         # UART 통신
 
-# dynamixel-sdk 
-pyserial>=3.5
+# --- Dev / Testing (optional) ---
+pytest>=8.0
+pre-commit>=3.7
+ruff>=0.5
+black>=24.3
+mypy>=1.10
+types-PyYAML>=6.0.12.20240808
