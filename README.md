@@ -3,8 +3,6 @@
 A communication runtime that connects vision-based strawberry detection to robotic harvesting.  
 It handles TCP line-delimited JSON from the detector, dispatches motion/grip commands to the robot stack, and emits UDP ACKs when a pick cycle completes.
 
-> 참고: 본 레포는 영문 중심 문서화이며, 일부 한국어(설명/비고)가 포함됩니다.
-
 ---
 
 ## Key features
